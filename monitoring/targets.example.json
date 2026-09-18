@@ -1,0 +1,10 @@
+{
+  "targets": [
+    {"id": "origin-ping-v4", "type": "icmp", "host": "server.example.com", "family": 4},
+    {"id": "origin-ping-v6", "type": "icmp", "host": "server.example.com", "family": 6},
+    {"id": "origin-ssh-v4", "type": "tcp", "host": "server.example.com", "port": 22, "family": 4},
+    {"id": "origin-ssh-v6", "type": "tcp", "host": "server.example.com", "port": 22, "family": 6},
+    {"id": "origin-http-v4", "type": "http", "url": "http://server.example.com/health", "family": 4, "expected_status": [200]},
+    {"id": "origin-https-v6", "type": "http", "url": "https://server.example.com/health", "family": 6, "expected_status": [200], "timeout": 10, "attempts": 2}
+  ]
+}
