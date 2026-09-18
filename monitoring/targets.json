@@ -1,0 +1,6 @@
+{
+  "targets": [
+    {"id": "wering-ping-v4", "type": "icmp", "host": "106.249.253.66", "family": 4},
+    {"id": "mon-01-ssh-v4", "type": "tcp", "host": "mon-01.wering.net", "port": 22, "family": 4}
+  ]
+}
